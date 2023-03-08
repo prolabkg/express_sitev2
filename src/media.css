@@ -19,10 +19,17 @@
 }
 
 @media (max-width:415px) {
-
+    section{
+        margin-bottom: 0;
+    }
     .title {
         font-size: 44px !important;
         line-height: 120%;
+    }
+    .calling {
+        font-weight: 400;
+        font-size: 26px !important;
+        line-height: 135%;
     }
 
 
@@ -54,7 +61,7 @@
     .slider-height-padding {
         padding-top: 270px;
     }
-    .font-normal {
+    .calling {
         font-weight: 400;
         font-size: 26px !important;
         line-height: 135%;

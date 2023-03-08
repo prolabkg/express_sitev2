@@ -47,7 +47,6 @@ iframe {
   visibility: hidden;
   margin: 0 auto;
   width: 90%;
-  min-width: 320px;
   max-width: 600px;
   position: fixed;
   padding: 15px;
@@ -190,12 +189,10 @@ iframe {
 }
 
 .modal_wrapper.sm {
-  width: 30vw;
   height: fit-content;
 }
 
 .modal_wrapper.lg {
-  width: 30vw;
   height: fit-content;
 }
 
