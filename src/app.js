@@ -8,3 +8,7 @@ var swiper = new Swiper(".mySwiper", {
     Infinity: true
 });
 
+window.addEventListener("scroll", function(){
+    let navScroll = document.getElementById('header');
+    navScroll.classList.toggle("fixed", window.scrollY > 0)
+})
