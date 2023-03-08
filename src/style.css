@@ -327,18 +327,3 @@ h2 {
   display: block;
 }
 
-@media (max-width: 767px) {
- 
-  ul li {
-    height: 300px;
-    font-size: 13px;
-    letter-spacing: 1px;
-  }
-}
-
-@media (max-width: 575px) {
-  ul li {
-    height: 200px;
-  }
-}
-
