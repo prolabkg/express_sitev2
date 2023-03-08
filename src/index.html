@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/motion.css">
+    <link rel="stylesheet" href="/popUp.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <header>
+        <nav class='nav' id='main'>
+            <div class="container mx-auto py-4 px-3 sm:px-0">
+                <div class="flex justify-between items-center">
+                    <div class='logo'>
+                        <a href="">
+                            <Image src='./images/svg/logo.svg' alt="PROlab LLC" />
+                        </a>
+                    </div>
+                    <div class='menu'>
+                        <div class='item' key={idx}>
+                            <ul>
+                                <li>
+                                    <a class="active" href="../src/index.html">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="#reasons">Сервис</a>
+                                </li>
+                                <li>
+                                    <a href="#profile">Портфолио</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='mt-auto md:ml-10 md:mt-0'>
+                            <a class="outline_button"  href="#popup">Связаться</a>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <main class='header'>
+        <div class="container mx-auto px-3 sm:px-0 mt-[120px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                <div>
+                    <h1 class='mb-16'>Получи свой первый сайт</h1>
+                    <p class='mb-10'>
+                        Компания PROlab запускает акцию “Landing 2.0”.
+                        Получи свой первый сайт и увеличь свои продажи всего за неделю
+                    </p>
+                    <a class="primary_button" href="#popup">
+                        <span class='mr-2'>Хочу сайт</span>
+                    </a>
+                </div>
+                <div class='text-right'>
+                    <Image src='../src/images/header_image.png' alt="prolab header" class='w-full lg:w-11/12'
+                        width='523' height='636' />
+                </div>
+            </div>
+        </div>
+    </main>
+    <section id="reasons">
+        <div class="container mx-auto px-3 sm:px-0">
+            <h3 class="text-center mb-20">
+                Главные причины иметь сайт <br /> для вашего бизнеса
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+                <div class="text-center">
+                    <div class="flex justify-center mb-8">
+                        <Image src='../src/images/svg/reason_1.svg' alt='item.desc' width="69" height="69" />
+                    </div>
+                    <h4 class="text-center mb-4">
+                        Продажи
+                    </h4>
+                    <div class="text-center text-slate-400 font-extralight">
+                        Сайт позволяет рассказать о своем бизнесе или новом продукте большему количеству потенциальных
+                        клиентов. Прежде чем вы сможете сделать продажу, вам необходимо заняться поиском. Вам необходимо
+                        определить своего идеального клиента, найти его, получить его контактную информацию, завоевать
+                        доверие и объяснить ценность вашего продукта.
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="flex justify-center mb-8">
+                        <Image src='../src/images/svg/reason_2.svg' alt='item.desc' width="69" height="69" />
+                    </div>
+                    <h4 class="text-center mb-4">
+                        Статус
+                    </h4>
+                    <div class="text-center text-slate-400 font-extralight">
+                        Повысить статус компании - «Как, у вас даже сайта нет?!» - если вы часто слышите эту фразу,
+                        значит, пора что-то менять! Для потребителя важны не только скидки или выбор товара, но и
+                        качественный сервис. Когда клиент может оперативно получить ответы на свои вопросы,статус
+                        заказа, тогда он с большей готовностью осуществит покупку
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="flex justify-center mb-8">
+                        <Image src='../src/images/svg/reason_3.svg' alt='item.desc' width="69" height="69" />
+                    </div>
+                    <h4 class="text-center mb-4">
+                        Расширение бизнеса
+                    </h4>
+                    <div class="text-center text-slate-400 font-extralight">
+                        Если у бизнеса много конкурентов в офлайне, собственный сайт поможет расширить целевую
+                        аудиторию, нишу. Благодаря уникальному торговому предложению, эффективной коммуникации с
+                        пользователями, запоминающемуся дизайну ваша компания сможет выгодно отстроиться от конкурентов.
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="flex justify-center mb-8">
+                        <Image src='../src/images/svg/reason_4.svg' alt='item.desc' width="69" height="69" />
+                    </div>
+                    <h4 class="text-center mb-4">
+                        Маркетинг
+                    </h4>
+                    <div class="text-center text-slate-400 font-extralight">
+                        Интернет-маркетинг — это действия, направленные на продвижение товаров и услуг в интернете.
+                        Основная цель интернет-маркетинга — превратить посетителей сайта в покупателей и увеличить
+                        прибыль. В интернете можно напрямую взаимодействовать с аудиторией, поддерживать связь с
+                        клиентами и контролировать ситуацию
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="flex justify-center mb-8">
+                        <Image src='../src/images/svg/reason_5.svg' alt='item.desc' width="69" height="69" />
+                    </div>
+                    <h4 class="text-center mb-4">
+                        Взаимодействие
+                    </h4>
+                    <div class="text-center text-slate-400 font-extralight">
+                        Сайт помогает удобно взаимодействовать с существующими покупателями, партнерами, сотрудниками.
+                        Когда возникают вопросы по доставке, оплате, наличию товаров, важно ответить на них быстро и
+                        удержать клиента. В таких ситуациях большинство компаний отвечают на вопросы по онлайн-покупкам.
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="flex justify-center mb-8">
+                        <Image src='../src/images/svg/reason_6.svg' alt='item.desc' width="69" height="69" />
+                    </div>
+                    <h4 class="text-center mb-4">
+                        Конкурентноспособность
+                    </h4>
+                    <div class="text-center text-slate-400 font-extralight">
+                        На конкурентоспособность компании большое влияние оказывают разнообразные факторы. Это и
+                        качество продукции, затраты на её приобретение и эксплуатацию, уровень развития сервиса. Одним
+                        из таких немаловажных факторов является уровень продвижения организации или её продукции
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="profile">
+        <div class="container mx-auto px-3 sm:px-0">
+            <h3 class="mb-20 text-center">Хочешь увидеть наше портфолио ?</h3>
+            <div class="relative">
+                <div class="section over-hide px-4 px-sm-0">
+                    <div class="container">
+                        <div class="row flex h-full justify-center">
+                            <div class="w-[65%]">
+                                <div class="section mx-auto text-center slider-height-padding">
+                                    <input class="checkbox frst" type="radio" id="slide-1" name="slider" checked />
+                                    <label for="slide-1"></label>
+                                    <input class="checkbox scnd" type="radio" name="slider" id="slider-2" />
+                                    <label for="slider-2"></label>
+                                    <input class="checkbox thrd" type="radio" name="slider" id="slider-3" />
+                                    <label for="slider-3"></label>
+                                    <input class="checkbox foth" type="radio" name="slider" id="slider-4" />
+                                    <label for="slider-4"></label>
+                                    <input class="checkbox five" type="radio" name="slider" id="slider-5" />
+                                    <label for="slider-5"></label>
+                                    <input class="checkbox six" type="radio" name="slider" id="slider-6" />
+                                    <label for="slider-6"></label>
+                                    <input class="checkbox seven" type="radio" name="slider" id="slider-7" />
+                                    <label for="slider-7"></label>
+                                    <ul class="big__slider">
+                                        <li class="slider__text">
+                                            <span>MALE GOOFY FACE</span>
+                                        </li>
+                                        <li class="slider__text">
+                                            <span>TOY PIG</span>
+                                        </li>
+                                        <li class="slider__text">
+                                            <span>SHY PORTRAIT</span>
+                                        </li>
+                                        <li class="slider__text">
+                                            <span>SKATEBOARD FACE</span>
+                                        </li>
+                                        <li class="slider__text">
+                                            <span>SKATEBOARD FACE</span>
+                                        </li>
+                                        <li class="slider__text">
+                                            <span>SKATEBOARD FACE</span>
+                                        </li>
+                                        <li class="slider__text">
+                                            <span>SKATEBOARD FACE</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id='contact_us'>
+        <div class='container mx-auto px-3 sm:px-0'>
+            <div class='grid grid-cols-1 md:grid-cols-3 gap-4 items-center'>
+                <div class='col-span-2 mb-5 text-center md:text-left md:mb-0'>
+                    <h2 class="font-normal text-[48px]">Свяжитесь с нами для большей информации</h2>
+                </div>
+                <div class='text-center md:text-right'>
+                    <a class="primary_button" href="#popup">Связаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class='footer bg-[#19191B]'>
+        <div class='container mx-auto px-3 py-6 sm:px-0'>
+            <div class='grid grid-cols-1 md:grid-cols-5 justify-between items-center'>
+                <div class='logo mb-3 md:mb-0 col-span-1'>
+                    <a href="#main">
+                        <img src='./images/svg/logo.svg' alt='PROlab LLC' class='mx-auto md:mx-0' width='1'
+                            height='1' />
+                    </a>
+                </div>
+                <div class='flex  md:justify-center flex-col md:flex-row mb-4 md:mb-0 col-span-3'>
+                    <div class="flex justify-center items-center">
+                        <a class='block text-slate-200 p-5 no-underline font-extralight' href='../src/index.html'>
+                            Главная
+                        </a>
+                        <a class='block text-slate-200 p-5 no-underline font-extralight' href='#reasons'>
+                            Сервис
+                        </a>
+                        <a class='block text-slate-200 p-5 no-underline font-extralight' href='#profile'>
+                            Портфолио
+                        </a>
+                    </div>
+                </div>
+                <div class='text-center md:text-right text-slate-200 md:text-red-300 lg:text-green-500 col-span-1'>
+                    <span><a href="http://prolab.kg">© PROlab LLC</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#x" class="overlay" id="popup"></a>
+    <div class="popup">
+        <div class="modal_wrapper sm" style="transform: none;">
+            <div style="opacity: 1;">
+                <div class="text-right mb-3"><button class="text-lg text-black"></button></div>
+                <div>
+                    <h4 class="mb-5 text-black text-[24px] text-center">Форма для обратной связи</h4>
+                    <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="col-span-1">
+                                <div class="mb-5">
+                                    <div><input class="primary_input" type="text"
+                                            placeholder="Имя и фамилия" name="name"></div>
+                                </div>
+                            </div>
+                            <div class="col-span-1">
+                                <div class="mb-5">
+                                    <div><input class="primary_input" type="number"
+                                            placeholder="Номер телефона" name="phone"></div>
+                                </div>
+                            </div>
+                            <div class="col-span-1 md:col-span-2">
+                                <div class="mb-5">
+                                    <div><input class="primary_input" type="text"
+                                            placeholder="Email (Необязательно)" name="email"></div>
+                                </div>
+                            </div>
+                            <div class="col-span-1 md:col-span-2">
+                                <div class="mb-5"><textarea class="primary_textarea"
+                                        placeholder="Напишите что вы хотите" name="message"></textarea></div>
+                            </div>
+                            <div class="col-span-1 md:col-span-2"><button
+                                    class="primary_button w-full block">Отправить</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
