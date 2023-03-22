@@ -20,7 +20,7 @@ body {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   position: relative;
-  background: url('../src/images/bg.png');
+  background: url('./images/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -162,29 +162,29 @@ h2 {
   box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-image: url("../src/images/project_1.png");
+  background-image: url("./images/project_1.png");
   animation: border-transform 6s linear infinite alternate forwards;
   -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   animation-play-state: paused;
 }
 .checkbox.scnd + label {
-  background-image: url("../src/images/project_2.png");
+  background-image: url("./images/project_2.png");
 }
 .checkbox.thrd + label {
-  background-image: url("../src/images/project_3.png");
+  background-image: url("./images/project_3.png");
 }
 .checkbox.foth + label {
-  background-image: url("../src/images/project_4.png");
+  background-image: url("./images/project_4.png");
 }
 .checkbox.five + label {
-  background-image: url("../src/images/project_5.png");
+  background-image: url("./images/project_5.png");
 }
 .checkbox.six + label {
-  background-image: url("../src/images/project_6.png");
+  background-image: url("./images/project_6.png");
 }
 .checkbox.seven + label {
-  background-image: url("../src/images/project_7.png");
+  background-image: url("./images/project_7.png");
 }
 
 .checkbox:checked + label {
@@ -248,7 +248,7 @@ h2 {
   border: 5px solid #bdc3c7;
   background-size: cover;
   background-position: center;
-  background-image: url("../src/images/project_1.png");
+  background-image: url("./images/project_1.png");
   border-radius: 50%;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -268,22 +268,22 @@ h2 {
   mix-blend-mode: difference;
 }
 .section > ul .slider__text:nth-child(2) {
-  background-image: url("../src/images/project_2.png");
+  background-image: url("./images/project_2.png");
 }
 .section > ul .slider__text:nth-child(3) {
-  background-image: url("../src/images/project_3.png");
+  background-image: url("./images/project_3.png");
 }
 .section > ul .slider__text:nth-child(4) {
-  background-image: url("../src/images/project_4.png");
+  background-image: url("./images/project_4.png");
 }
 .section > ul .slider__text:nth-child(5) {
-  background-image: url("../src/images/project_5.png");
+  background-image: url("./images/project_5.png");
 }
 .section > ul .slider__text:nth-child(6) {
-  background-image: url("../src/images/project_6.png");
+  background-image: url("./images/project_6.png");
 }
 .section > ul .slider__text:nth-child(7) {
-  background-image: url("../src/images/project_7.png");
+  background-image: url("./images/project_7.png");
 }
 
 .checkbox.frst:checked ~ ul .slider__text:nth-child(1) {
